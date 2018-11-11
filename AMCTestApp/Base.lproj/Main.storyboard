@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AMCTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ScreenCollectionView" customModule="AMCTestApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hEs-iS-bki">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mzb-eU-2UG">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopCarousel" id="X39-vl-PTM" customClass="TopCarouselCell" customModule="AMCTestApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76.5" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="tintColor" red="1" green="0.01026766514" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RegularCarousel" id="qTQ-zi-5dA" customClass="RegularCarouselCell" customModule="AMCTestApp" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="0.0" width="363" height="203"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="363" height="203"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RtE-g6-KqM" customClass="RegularMovieCollectionView" customModule="AMCTestApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="203"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7v1-ao-9cH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="363" height="40.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U1a-Ns-CnC">
+                                                            <rect key="frame" x="0.0" y="40.5" width="363" height="162.5"/>
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="bgV-m7-zIP">
+                                                                <size key="itemSize" width="50" height="50"/>
+                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            </collectionViewFlowLayout>
+                                                            <cells>
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RegularMovieCell" id="fN3-gk-CvM" customClass="RegularMovieCell" customModule="AMCTestApp" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <subviews>
+                                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-bC-byg">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                    </view>
+                                                                    <constraints>
+                                                                        <constraint firstItem="I2C-bC-byg" firstAttribute="height" secondItem="fN3-gk-CvM" secondAttribute="height" id="3JH-Ge-wbM"/>
+                                                                        <constraint firstItem="I2C-bC-byg" firstAttribute="width" secondItem="fN3-gk-CvM" secondAttribute="width" id="BuE-4p-SfU"/>
+                                                                        <constraint firstItem="I2C-bC-byg" firstAttribute="centerX" secondItem="fN3-gk-CvM" secondAttribute="centerX" id="Ipc-1e-xov"/>
+                                                                        <constraint firstItem="I2C-bC-byg" firstAttribute="centerY" secondItem="fN3-gk-CvM" secondAttribute="centerY" id="a65-Xs-boG"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <outlet property="image" destination="I2C-bC-byg" id="I76-bo-hpJ"/>
+                                                                    </connections>
+                                                                </collectionViewCell>
+                                                            </cells>
+                                                            <connections>
+                                                                <outlet property="dataSource" destination="RtE-g6-KqM" id="jVX-U4-vOf"/>
+                                                                <outlet property="delegate" destination="RtE-g6-KqM" id="Z4W-Oi-BSZ"/>
+                                                            </connections>
+                                                        </collectionView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="U1a-Ns-CnC" firstAttribute="top" secondItem="7v1-ao-9cH" secondAttribute="bottom" id="HUz-di-BPh"/>
+                                                        <constraint firstItem="7v1-ao-9cH" firstAttribute="leading" secondItem="RtE-g6-KqM" secondAttribute="leading" id="ISi-YL-af8"/>
+                                                        <constraint firstItem="U1a-Ns-CnC" firstAttribute="height" secondItem="RtE-g6-KqM" secondAttribute="height" multiplier="8:10" id="O6E-kN-nYp"/>
+                                                        <constraint firstItem="U1a-Ns-CnC" firstAttribute="leading" secondItem="RtE-g6-KqM" secondAttribute="leading" id="SqA-ZQ-99d"/>
+                                                        <constraint firstItem="U1a-Ns-CnC" firstAttribute="width" secondItem="RtE-g6-KqM" secondAttribute="width" id="YG1-Vy-G6m"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7v1-ao-9cH" secondAttribute="trailing" id="bij-9Q-Rfw"/>
+                                                        <constraint firstItem="7v1-ao-9cH" firstAttribute="top" secondItem="RtE-g6-KqM" secondAttribute="top" id="cmp-HR-Tom"/>
+                                                        <constraint firstItem="7v1-ao-9cH" firstAttribute="width" secondItem="RtE-g6-KqM" secondAttribute="width" id="gyh-PH-3Dc"/>
+                                                        <constraint firstItem="7v1-ao-9cH" firstAttribute="height" secondItem="RtE-g6-KqM" secondAttribute="height" multiplier="2:10" id="ulA-8I-X0a"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="collectionView" destination="U1a-Ns-CnC" id="pK5-LF-fyM"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="tintColor" red="1" green="0.01026766514" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="RtE-g6-KqM" firstAttribute="width" secondItem="qTQ-zi-5dA" secondAttribute="width" id="S0l-Et-8o1"/>
+                                            <constraint firstItem="RtE-g6-KqM" firstAttribute="height" secondItem="qTQ-zi-5dA" secondAttribute="height" id="ked-CW-hbI"/>
+                                            <constraint firstItem="RtE-g6-KqM" firstAttribute="centerX" secondItem="qTQ-zi-5dA" secondAttribute="centerX" id="qFO-qs-gRf"/>
+                                            <constraint firstItem="RtE-g6-KqM" firstAttribute="centerY" secondItem="qTQ-zi-5dA" secondAttribute="centerY" id="uwL-8G-JxZ"/>
+                                        </constraints>
+                                        <size key="customSize" width="363" height="203"/>
+                                        <connections>
+                                            <outlet property="collectionView" destination="RtE-g6-KqM" id="PjO-wn-Twd"/>
+                                            <outlet property="title" destination="7v1-ao-9cH" id="cpU-KE-QOt"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="znz-Kq-tTv"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="xOH-Ud-tFe"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hEs-iS-bki" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Dqp-Ad-hCn"/>
+                            <constraint firstItem="hEs-iS-bki" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="a9b-mL-IyS"/>
+                            <constraint firstItem="hEs-iS-bki" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="ssj-nf-aBE"/>
+                            <constraint firstItem="hEs-iS-bki" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xfG-CU-7mq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="carouselContainers" destination="hEs-iS-bki" id="mCs-Uq-GKH"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="screenContainer" destination="8bC-Xf-vdC" id="x1c-3A-xYo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106.59670164917542" y="117.59999999999999"/>
+        </scene>
+    </scenes>
+</document>
